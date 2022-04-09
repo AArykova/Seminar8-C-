@@ -31,7 +31,7 @@ void PrintArray()
         {
             for (int k = 0; k < depth; k++)
             {
-                Console.Write($"{array[i, j, k]} ({i},{j},{k}) ");
+                Console.Write($"{array[i, j, k]} [{i},{j},{k}] ");
             }
         }
         Console.WriteLine();

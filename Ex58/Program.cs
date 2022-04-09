@@ -31,6 +31,7 @@ void FillArray(int [,] array, int [,] array1)
 }
 void PrintArray(int [,] array, int [,] array1)
 {
+     Console.WriteLine("Первая матрица");
     for (int i = 0; i < lines; i++)
     {
         for (int j = 0; j < columns; j++)
@@ -40,6 +41,7 @@ void PrintArray(int [,] array, int [,] array1)
         Console.WriteLine();
     }
     Console.WriteLine();
+    Console.WriteLine("Вторая матрица");
     for (int i = 0; i < lines; i++)
     {
         for (int j = 0; j < columns; j++)
@@ -52,7 +54,7 @@ void PrintArray(int [,] array, int [,] array1)
 
 void CompositionArray()
 {
-    
+    Console.WriteLine("Произведение первой и второй матрицы");
     for (int i = 0; i < lines; i++)
     {
         for (int j = 0; j < columns; j++)
@@ -60,6 +62,6 @@ void CompositionArray()
             newarray[i, j] = arrayA[i,j]*arrayB[i,j];
             Console.Write(newarray[i, j] + " ");
         }
-         Console.WriteLine();
+        Console.WriteLine();
     }    
 }

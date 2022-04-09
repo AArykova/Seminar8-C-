@@ -32,7 +32,9 @@ void PrintArray()
 }
 void SummaArray()
 {
+    Console.WriteLine();
     int minsumma = lines*10;
+    int minindex = 0;
     for (int i = 0; i < lines; i++)
     {
         int summa = 0;
@@ -44,8 +46,10 @@ void SummaArray()
         if (summa < minsumma)
          {
             minsumma = summa;
+            minindex = i;
          }
         Console.WriteLine($"Сумма в строке {i+1} равна {summa}");
     }
-    Console.WriteLine($"Минимальная сумма в строках равна {minsumma}");
+    Console.WriteLine();
+    Console.WriteLine($"Минимальная сумма в строках равна {minsumma} в {minindex+1} строке");
 }
